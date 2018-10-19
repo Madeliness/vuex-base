@@ -1,15 +1,27 @@
 #项目初始化
+
     1.安装vue-cli
+    
         npm install -g vue-cli
+        
     2.初始化项目
+    
         vue init webpack my-project
+        
     3.进入项目
+    
         cd my-project
+        
     4.安装依赖
+    
         npm install
+        
     5.启动项目
+    
         npm run dev
+        
 #项目目录结构
+
     index.html:  项目根试图
     .postcssrc.js:  postcssrc配置文件
     static： 静态文件
@@ -20,25 +32,45 @@
     src/components: 其他子组件
     src/assets: css,image等
 #VUE基础
+
     Vue组件：
+    
         包含三个部分：
+        
             Template：视图部分
+            
             script: 逻辑部分
+            
             style: 样式部分
+            
     Mustache: 模板
+    
         表现形式： {{语法}}
+        
         {{ hello }}
+        
         <h2>{{1 + 1}}</h2>
+        
         <h1>{{'xsdsffr'}}</h1>
+        
         <!-- <a>{{0<10 ? '对的' : '错的'}}</a> -->
+        
         {{'注意：只能存在单行语句'}}
+        
     VUE 基本指令：
+    
         v-html: 
+        
         v-text: 
+        
         v-bind: 绑定
+        
         v-if: 条件指令
+        
         v-else:
+        
         v-show: display:block/none
+        
             v-if 是“真正”的条件渲染，因为它会确保在切换过程中条件块内的事件监听器和子组件适当地被销毁和重建。
 
             v-if 也是惰性的：如果在初始渲染时条件为假，则什么也不做——直到条件第一次变为真时，才会开始渲染条件块。
@@ -162,14 +194,25 @@
             4.mock.js 
 #Vuex
     1.是什么
+    
         Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。
+        
     2.什么情况下我应该使用 Vuex？
+    
         如果您不打算开发大型单页应用，使用 Vuex 可能是繁琐冗余的。确实是如此——如果您的应用够简单，您最好不要使用 Vuex。一个简单的 store 模式就足够您所需了。但是，如果您需要构建一个中大型单页应用，您很可能会考虑如何更好地在组件外部管理状态，Vuex 将会成为自然而然的选择。
+        
     3.Vuex状态管理
+    
         mutations:
+        
             只能同步执行
+            
         action:
+        
             1.Action 提交的是 mutation，而不是直接变更状态
+            
             2.Action 可以包含任意异步操作
+            
 #vue-resource
+
     1.1.0以后已弃用，具体参考Axios
