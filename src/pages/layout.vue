@@ -80,7 +80,7 @@ export default {
           el: '.swiper-pagination'
         },
         loop: true,
-        autoplay:true,
+        autoplay: true,
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev'
